@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Personal - Joaquín Roberto Maver - UADE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+       <header>
+            <div class="ficha-header">
+                <h1>Ficha Personal</h1>
+                <nav>
+                    <button id="toggle-mode">🌙 / ☀️</button>
+                </nav>
+            </div>
+        </header>
+
+        <div class="perfil-principal">
+            <img src="img/foto_personal.jpg" alt="Foto de perfil" class="foto-perfil">
+            <h2 class="nombre-principal">Joaquín Roberto Maver</h2>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Nombre Completo</div>
+                <p class="info-valor">Joaquín Roberto Maver</p>
+            </div>
+
+            <div class="info-item">
+                <div class="info-label">Nro de Legajo</div>
+                <p class="info-valor">1030299</p>
+            </div>
+
+            <div class="info-item">
+                <div class="info-label">Materia</div>
+                <p class="info-valor">Diseño y desarrollo Web</p>
+            </div>
+
+            <div class="info-item">
+                <div class="info-label">Curso</div>
+                <p class="info-valor">535117</p>
+            </div>
+        </div>
+
+        <div class="repositorios-grid">
+            <div class="tarjeta-repo">
+                <img src="img/the_office.jpg" alt="Fan page">
+                <h3><a href="https://jrm-2024-alg.github.io/FanPageTheOffice-TPO/" target="_blank">Fan page</a></h3> 
+                <p><a href="https://github.com/JRM-2024-alg/FanPageTheOffice-TPO" target="_blank">Repositorio</a></p>
+            </div>
+
+            <div class="tarjeta-repo">
+                <img src="img/experiencia_cafe.jpg" alt="Local comercial">
+                <h3><a href="https://jrm-2024-alg.github.io/ExperienciaCafe-TPO-JavaScript/index.html" target="_blank">Local comercial</a></h3>
+                <p><a href="https://github.com/JRM-2024-alg/ExperienciaCafe-TPO-JavaScript" target="_blank">Repositorio</a></p>
+                <p><a href="docs/TPO - Diseño y Desarrollo Web.docx" target="_blank">Documentación</a></p>
+            </div>
+
+            <div class="tarjeta-repo">
+                <img src="img/local_comercial.jpg" alt="Centro comercial">
+                <h3><a href="https://jartimiak.github.io/Centro-Comercial-Grupo1-TPO-DDW/" target="_blank">Centro comercial</a></h3>
+                <p><a href="https://github.com/JArtimiak/Centro-Comercial-Grupo1-TPO-DDW" target="_blank">Repositorio</a></p>
+                <p><a href="docs/Mall Costa del Sol.pptx" target="_blank">Documentación</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.getElementById('toggle-mode');
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+            });
+        } else {
+            console.warn('Botón #toggle-mode no encontrado en el DOM.');
+        }
+    });
+    </script>
+</body>
+</html>
